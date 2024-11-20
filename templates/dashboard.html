@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Личный кабинет</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home1') }}">Главная</a></li>
+                <li><a href="/port">Портфолио</a></li>
+                <li><a href="{{ url_for('cont') }}">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ателье Мод</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="comforter-regular">
+        <h1>BOLSHIE KURTKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="/port">Портфолио</a></li>
+                <li><a href="{{ url_for('cont') }}">Контакты</a></li>
+                <li><a href="{{ url_for('login') }}">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Создайте свой уникальный стиль</h2>
+            <p>Мы поможем вам выглядеть стильно и модно!</p>
+            <a href="#" class="cta-button">Записаться на консультацию</a>
+        </section>
+
+        <section class="services">
+            <h3>Наши Услуги</h3>
+            <div class="service">
+                <h4>Индивидуальный пошив</h4>
+                <img src="{{ url_for('static', filename='images/result_BK (1).jpg') }}">
+                <p>Создание одежды по вашим меркам и пожеланиям.</p>
+            </div>
+            <div class="service">
+                <h4>Кастомные решения</h4>
+                <img src="{{ url_for('static', filename='images/result_kai.jpg') }}">
+                <p>Придадим вашей вещи новую жизнь</p>
+            </div>
+            <div class="service">
+                <h4>Консультации по стилю</h4>
+                <img src="{{ url_for('static', filename='images/result_gon.jpg') }}">
+                <p>Поможем выбрать идеальный образ для любого случая.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BOLSHIE KURTKI</p>
+    </footer>
+</body>
+</html>

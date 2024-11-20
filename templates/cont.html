@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="comforter-regular">
+        <h1>BOLSHIE KURTKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home1') }}">Главная</a></li>
+                <li><a href="/port">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="{{ url_for('login') }}">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product img">
+            <h2>Контакты</h2>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='images/cont.jpg') }}" alt="Образ 1">
+            </div>
+            <div class="product">
+                <h3>М: Китай-город</h3>
+                <h3>Адрес:</h3>
+                <p>Москва, Большой Трёхсвятительский пер., 2/1с5 "Особняк"  -1 этаж</p>
+                <br>
+                <p>Четверг: 16:00 - 21:00 <br>
+                    Пятница: 17:00 - 22:30<br>
+                    Суббота: 17:00 - 22:30</p>
+                <h3>Контакты</h3>
+                <br>
+                <p>Telegram: @noncitizen_info<br>
+                    info@noncitizen.store</p>
+                </div>
+
+</html>
